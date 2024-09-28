@@ -4,13 +4,13 @@ setup(
     name='gradient_visualizer',
     version='0.1',
     description='Interactive Streamlit app to visualize gradient flow of a neural network',
-    author='Your Name',
-    author_email='youremail@example.com',
+    author='Cristian Leo',
+    author_email='cristianleo120@gmail.com',
     packages=find_packages(),
     install_requires=[
         'torch',
         'streamlit',
-        'matplotlib',
+        'plotly',
         'numpy',
     ],
 )
