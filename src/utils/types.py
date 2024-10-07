@@ -1,10 +1,14 @@
 from dataclasses import dataclass
 from enum import Enum
 
+from enum import Enum
+
 class ActivationFunction(Enum):
     RELU = "ReLU"
     SIGMOID = "Sigmoid"
     TANH = "Tanh"
+    SWISH = "Swish"
+    PRELU = "PReLU"
 
 @dataclass
 class NetworkConfig:
