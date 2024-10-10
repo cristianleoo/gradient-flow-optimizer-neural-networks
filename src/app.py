@@ -76,7 +76,7 @@ def main():
     loss_fn = nn.MSELoss() if is_regression else nn.CrossEntropyLoss()
 
     if st.button("Start Training"):
-        st.subheader("Dense Neural Network Training")
+        # st.subheader("Dense Neural Network Training")
         train_loss_history_dense, val_loss_history_dense, metrics_history_dense, gradient_flow_dense = train_model(
             dense_model, optimizer_dense, loss_fn, config, train_loader, val_loader, is_regression,
             lambda epoch, train_loss, val_loss, metrics: st.sidebar.text(
@@ -86,7 +86,7 @@ def main():
             gradient_norm=gradient_norm
         )
 
-        st.subheader("Sparse Neural Network Training")
+        # st.subheader("Sparse Neural Network Training")
         train_loss_history_sparse, val_loss_history_sparse, metrics_history_sparse, gradient_flow_sparse = train_model(
             sparse_model, optimizer_sparse, loss_fn, config, train_loader, val_loader, is_regression,
             lambda epoch, train_loss, val_loss, metrics: st.sidebar.text(
